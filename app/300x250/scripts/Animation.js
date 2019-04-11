@@ -23,12 +23,14 @@ app.Animation = (function () {
     var pin3 = document.getElementById('pin3');
     var pin4 = document.getElementById('pin4');
 
-    var txt1 = document.getElementById('txt1');
+    var txt1a = document.getElementById('txt1a');
+    var txt1b = document.getElementById('txt1b');
+
     var txt2 = document.getElementById('txt2');
     var txt3 = document.getElementById('txt3');
-    var txtbox = document.getElementById('txtbox');
 
-    var cta = document.getElementById('cta');
+    var ctaa = document.getElementById('ctaa');
+    var ctab = document.getElementById('ctab');
     var cta_bg = document.getElementById('cta_bg');
 
     var buttonExit = document.getElementById('button-exit');
@@ -62,8 +64,36 @@ app.Animation = (function () {
     // Starts the animation
     function start() {
 
+        tltxt.fromTo(txt1a, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.5")
+            .set(txt1b, {opacity: 1})
+            .to(txt1b, .25, {opacity:0, scale:1.25, ease: Sine.easeOut})
 
-        pintl1.from(pin1, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=3.5")
+            .fromTo(txt2a, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "-=.25")
+            .set(txt2b, {opacity: 1})
+            .to(txt2b, .25, {opacity:0, scale:1.25, ease: Sine.easeOut})
+
+            .fromTo(txt3a, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.5")
+            .set(txt3b, {opacity: 1})
+            .to(txt3b, .25, {opacity:0, scale:1.25, ease: Sine.easeOut})
+
+            .fromTo(txt4a, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "-=.25")
+            .set(txt4b, {opacity: 1})
+            .to(txt4b, .25, {opacity:0, scale:1.25, ease: Sine.easeOut})
+
+            .fromTo(txt5a, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "-=.25")
+            .set(txt5b, {opacity: 1})
+            .to(txt5b, .25, {opacity:0, scale:1.25, ease: Sine.easeOut})
+
+            .fromTo(txt6a, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.5")
+            .set(txt6b, {opacity: 1})
+            .to(txt6b, .25, {opacity:0, scale:1.25, ease: Sine.easeOut})
+
+            .fromTo(ctaa, .25, {opacity:0, scale: .75}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.75")
+            .set(ctab, {opacity: 1})
+            .to(ctab, .25, {opacity:0, scale:1.25, ease: Sine.easeOut});
+
+
+        pintl1.from(pin1, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=4")
             .to(pin1, .25, {y: "+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin1, .25, {y: "-=5", ease: Sine.easeOut})
             .to(pin1, .25, {y: "+=5", ease: Sine.easeIn})
@@ -114,19 +144,7 @@ app.Animation = (function () {
             });
 
 
-        tltxt.to(txtbox, .25, {opacity: 1}, "+=.75")
-            .fromTo(txtbox, .25, {y: "-=20"}, {y: "+=23", ease: Sine.easeOut}, "-=.25")
-            .to(txtbox, .1, {y: "-=3", ease: Sine.easeInOut})
 
-            .to(txt2, .25, {opacity: 1}, "+=1.25")
-            .fromTo(txt2, .25, {y: "-=20"}, {y: "+=23", ease: Sine.easeOut}, "-=.25")
-            .to(txt2, .1, {y: "-=3", ease: Sine.easeInOut})
-
-            .to(txt3, .25, {opacity: 1}, "+=1")
-
-            .to(cta, .25, {opacity: 1}, "+=1.5")
-            .fromTo(cta, .25, {y: "-=20"}, {y: "+=23", ease: Sine.easeOut}, "-=.25")
-            .to(cta, .2, {y: "-=3", ease: Sine.easeInOut});
 
 
         tl1.to(pin1, 1, {y: '+=5', ease: Sine.easeInOut})
