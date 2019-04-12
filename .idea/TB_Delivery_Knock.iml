@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="TB_Delivery_Knock node_modules" level="project" />
+    <orderEntry type="library" name="greensock-DefinitelyTyped" level="application" />
   </component>
 </module>

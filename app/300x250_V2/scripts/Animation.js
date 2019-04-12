@@ -9,6 +9,7 @@ app.Animation = (function () {
     var tl3 = new TimelineMax({repeat: -1, paused: true});
     var tl4 = new TimelineMax({repeat: -1, paused: true});
     var tl5 = new TimelineMax({repeat: -1, paused: true});
+    var tl6 = new TimelineMax({repeat: -1, paused: true});
 
     var pintl1 = new TimelineMax();
     var pintl2 = new TimelineMax();
@@ -31,6 +32,7 @@ app.Animation = (function () {
     var txt5 = document.getElementById('txt5');
     var txt6 = document.getElementById('txt6');
 
+    var glow = document.getElementById('glow');
     var cta = document.getElementById('cta');
     var cta_bg = document.getElementById('cta_bg');
 
@@ -70,13 +72,31 @@ app.Animation = (function () {
     // Starts the animation
     function start() {
 
-        tltxt.fromTo(txt1, .25, {opacity:0, scale: 0}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.5")
-            .fromTo(txt2, .25, {opacity:0, scale: 0}, {opacity:1, scale:1, ease: Sine.easeIn})
-            .fromTo(txt3, .25, {y:"+=35"}, {y:0, ease: Sine.easeIn}, "+=.5")
-            .fromTo(txt4, .25, {y:"+=35"}, {y:0, ease: Sine.easeIn})
-            .fromTo(txt5, .25, {y:"+=35"}, {y:0, ease: Sine.easeIn})
-            .fromTo(txt6, .25, {opacity:0, scale: 0}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.5")
-            .fromTo(cta, .25, {opacity:0, scale: 0}, {opacity:1, scale:1, ease: Sine.easeIn}, "+=.5");
+        tltxt.fromTo(txt1, .15, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
+            .to(txt1, .1, {scale:1, ease: Sine.easeIn})
+
+            .fromTo(txt2, .15, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "-=.1")
+            .to(txt2, .1, {scale:1, ease: Sine.easeIn})
+
+            .fromTo(txt3, .2, {y:"+=35"}, {y:-2, ease: Sine.easeInOut}, "+=.5")
+            .to(txt3, .15, {y:0, ease: Sine.easeIn})
+
+            .fromTo(txt4, .2, {y:"+=35"}, {y:-2, ease: Sine.easeInOut}, "-=.25")
+            .to(txt4, .15, {y:0, ease: Sine.easeIn})
+
+            .fromTo(txt5, .2, {y:"+=35"}, {y:-2, ease: Sine.easeInOut}, "-=.25")
+            .to(txt5, .15, {y:0, ease: Sine.easeIn})
+
+            .fromTo(txt6, .25, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
+            .to(txt6, .15, {scale:1, ease: Sine.easeIn})
+
+            .fromTo(cta, .25, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
+            .to(cta, .15, {scale:.95, ease: Sine.easeInOut})
+            .to(cta, .1, {scale:1, ease: Sine.easeIn, onComplete: function(){tl6.play();}});
+
+        tl6.to(cta, .25, {scale:1.05, ease: Sine.easeInOut}, "+=3")
+            .to(cta, .15, {scale:.95, ease: Sine.easeInOut})
+            .to(cta, .1, {scale:1, ease: Sine.easeIn});
 
 
 
