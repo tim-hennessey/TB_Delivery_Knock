@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb4e0cb3-3968-4678-a182-742628810631" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/300x250/index.html" afterPath="$PROJECT_DIR$/app/300x250/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/300x250/scripts/Animation.js" afterPath="$PROJECT_DIR$/app/300x250/scripts/Animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/300x250/styles/_layout.scss" afterPath="$PROJECT_DIR$/app/300x250/styles/_layout.scss" />
-    </list>
+    <list default="true" id="cb4e0cb3-3968-4678-a182-742628810631" name="Default" comment="" />
     <ignored path="TB_Delivery_Knock.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -138,6 +133,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cb4e0cb3-3968-4678-a182-742628810631" name="Default" comment="" />
@@ -146,16 +144,16 @@
       <option name="presentableId" value="Default" />
       <updated>1554933638883</updated>
       <workItem from="1554933641463" duration="1525000" />
-      <workItem from="1554948513399" duration="2147000" />
+      <workItem from="1554948513399" duration="2746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3672000" />
+    <option name="totallyTimeSpent" value="4271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="181" y="32" width="900" height="970" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24974824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
