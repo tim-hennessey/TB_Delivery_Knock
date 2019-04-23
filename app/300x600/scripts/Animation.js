@@ -78,7 +78,7 @@ app.Animation = (function () {
             .to(cta, .1, {scale:1, ease: Sine.easeIn});
 
 
-        pintl.from(pin, .25, {scale:"-=.2", opacity:0, ease: Sine.easeInOut}, "+=3.5")
+        pintl.from(pin, .25, {scale:"-=.2", opacity:0, ease: Sine.easeInOut}, "+=2.5")
             .to(pin, .25, {y:"+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin, .25, {y:"-=5", ease: Sine.easeOut})
             .to(pin, .25, {y:"+=5", ease: Sine.easeIn})
@@ -91,7 +91,7 @@ app.Animation = (function () {
 
         t.to(car_upper, .1, {y: "+=.5", ease: Linear.easeNone, repeat: -1, yoyo:true});
 
-        cartl.from(car, 1, {x: "+=150", ease: Sine.easeOut}, "+=4")
+        cartl.from(car, 1, {x: "+=150", ease: Sine.easeOut}, "+=3")
             .from(car_upper, .5, {rotation:-3, ease: Sine.easeOut}, "-=.5")
             .to(car_upper, .2, {rotation:+2, ease: Sine.easeInOut, repeat: 1, yoyo:true})
             .to(car, 1, {x: "-=250", ease: Sine.easeIn}, "+=3")

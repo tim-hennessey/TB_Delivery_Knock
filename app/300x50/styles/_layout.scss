@@ -5,7 +5,7 @@ body {
 }
 
 #banner {
-    background: #94b6e4;
+    background: #000b38;
     position: absolute;
     overflow: hidden;
     width: $banner-width;
@@ -16,35 +16,72 @@ body {
     margin-top: -$banner-height / 2;
     opacity:0;
 
-    .dot{
-        width:6px;
-        height:2px;
-        border-radius: 2px;
-        background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-        position:absolute;
-    }
+  #curtain {
+    left: 0;
+    top: 27px;
+    width: $banner-width;
+    height: 23px;
+    background: #000b38;
+    position: absolute;
+  }
+
+  #city {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
 
   #txt1 {
-    left: 0;
+    left: 50px;
     top: 0;
+    clip: rect(0px, 48px, 28px, 0px);
+    transform: translate3d(0, 0, 0.1px);
     position: absolute;
   }
 
   #txt2 {
-    left: 0;
+    left: 50px;
     top: 0;
+    clip: rect(0px, 100px, 28px, 48px);
+    transform: translate3d(0, 0, 0.1px);
     position: absolute;
   }
 
-    #city {
-        right: 0;
-        bottom: 0;
-        position: absolute;
-    }
+  #txt3 {
+    left: 50px;
+    top: 0;
+    clip: rect(0px, 125px, 28px, 100px);
+    transform: translate3d(0, 0, 0.1px);
+    position: absolute;
+  }
+
+  #txt4 {
+    left: 50px;
+    top: 0;
+    clip: rect(0px, 162px, 28px, 125px);
+    transform: translate3d(0, 0, 0.1px);
+    position: absolute;
+  }
+
+  #txt5 {
+    left: 50px;
+    top: 0;
+    clip: rect(0px, 204px, 28px, 162px);
+    transform: translate3d(0, 0, 0.1px);
+    position: absolute;
+  }
+
+  #txt6 {
+    left: 50px;
+    top: 0;
+    clip: rect(28px, 200px, 50px, 0px);
+    transform: translate3d(0, 0, 0.1px);
+    position: absolute;
+  }
 
     #pin {
-        left: 11px;
-        bottom: 3px;
+        left: 0;
+        bottom: -1px;
         transform: translate3d(0, 0, 0.1px);
         position: absolute;
     }
