@@ -72,20 +72,20 @@ app.Animation = (function () {
     // Starts the animation
     function start() {
 
-        tltxt.fromTo(txt1, .15, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
+        tltxt.fromTo(txt1, .2, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
             .to(txt1, .1, {scale:1, ease: Sine.easeIn})
 
-            .fromTo(txt2, .15, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "-=.1")
+            .fromTo(txt2, .2, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "-=.1")
             .to(txt2, .1, {scale:1, ease: Sine.easeIn})
 
-            .fromTo(txt3, .2, {y:"+=35"}, {y:-2, ease: Sine.easeInOut}, "+=.5")
-            .to(txt3, .15, {y:0, ease: Sine.easeIn})
+            .fromTo(txt3, .25, {y:"+=35"}, {y:-3, ease: Sine.easeInOut}, "+=.5")
+            .to(txt3, .15, {y:0, ease: Sine.easeInOut})
 
-            .fromTo(txt4, .2, {y:"+=35"}, {y:-2, ease: Sine.easeInOut}, "-=.25")
-            .to(txt4, .15, {y:0, ease: Sine.easeIn})
+            .fromTo(txt4, .25, {y:"+=35"}, {y:-3, ease: Sine.easeInOut}, "-=.25")
+            .to(txt4, .15, {y:0, ease: Sine.easeInOut})
 
-            .fromTo(txt5, .2, {y:"+=35"}, {y:-2, ease: Sine.easeInOut}, "-=.25")
-            .to(txt5, .15, {y:0, ease: Sine.easeIn})
+            .fromTo(txt5, .25, {y:"+=35"}, {y:-3, ease: Sine.easeInOut}, "-=.25")
+            .to(txt5, .15, {y:0, ease: Sine.easeInOut})
 
             .fromTo(txt6, .25, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
             .to(txt6, .15, {scale:1, ease: Sine.easeIn})
@@ -94,13 +94,13 @@ app.Animation = (function () {
             .to(cta, .15, {scale:.95, ease: Sine.easeInOut})
             .to(cta, .1, {scale:1, ease: Sine.easeIn, onComplete: function(){tl6.play();}});
 
-        tl6.to(cta, .25, {scale:1.05, ease: Sine.easeInOut}, "+=3")
+        tl6.to(cta, .25, {scale:1.05, ease: Sine.easeInOut}, "+=5")
             .to(cta, .15, {scale:.95, ease: Sine.easeInOut})
             .to(cta, .1, {scale:1, ease: Sine.easeIn});
 
 
 
-        pintl1.from(pin1, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=2.5")
+        pintl1.from(pin1, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=3")
             .to(pin1, .25, {y: "+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin1, .25, {y: "-=5", ease: Sine.easeOut})
             .to(pin1, .25, {y: "+=5", ease: Sine.easeIn})
@@ -110,7 +110,7 @@ app.Animation = (function () {
                 }
             });
 
-        pintl2.from(pin2, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=2.6")
+        pintl2.from(pin2, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=3.1")
             .to(pin2, .25, {y: "+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin2, .25, {y: "-=5", ease: Sine.easeOut})
             .to(pin2, .25, {y: "+=5", ease: Sine.easeIn})
@@ -120,7 +120,7 @@ app.Animation = (function () {
                 }
             });
 
-        pintl3.from(pin3, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=2.7")
+        pintl3.from(pin3, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=3.2")
             .to(pin3, .25, {y: "+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin3, .25, {y: "-=5", ease: Sine.easeOut})
             .to(pin3, .25, {y: "+=5", ease: Sine.easeIn})
@@ -130,7 +130,7 @@ app.Animation = (function () {
                 }
             });
 
-        pintl4.from(pin4, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=2.8")
+        pintl4.from(pin4, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=3.3")
             .to(pin4, .25, {y: "+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin4, .25, {y: "-=5", ease: Sine.easeOut})
             .to(pin4, .25, {y: "+=5", ease: Sine.easeIn})
@@ -140,7 +140,7 @@ app.Animation = (function () {
                 }
             });
 
-        pintl5.from(pin5, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=2.9")
+        pintl5.from(pin5, .25, {scale: "-=.2", opacity: 0, ease: Sine.easeInOut}, "+=3.4")
             .to(pin5, .25, {y: "+=10", ease: Sine.easeIn}, "+=.2")
             .to(pin5, .25, {y: "-=5", ease: Sine.easeOut})
             .to(pin5, .25, {y: "+=5", ease: Sine.easeIn})
