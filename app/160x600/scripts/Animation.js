@@ -63,25 +63,25 @@ app.Animation = (function () {
     // Starts the animation
     function start() {
 
-        tltxt.fromTo(txt1, .15, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
+        tltxt.fromTo(txt1, .2, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
             .to(txt1, .1, {scale:1, ease: Sine.easeIn})
 
-            .fromTo(txt2, .15, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "-=.1")
+            .fromTo(txt2, .2, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "-=.1")
             .to(txt2, .1, {scale:1, ease: Sine.easeIn})
 
-            .fromTo(txt3, .2, {y:"+=40"}, {y:-2, ease: Sine.easeInOut}, "+=.5")
-            .to(txt3, .15, {y:0, ease: Sine.easeIn})
+            .fromTo(txt3, .25, {y:"+=40"}, {y:-3, ease: Sine.easeInOut}, "+=.5")
+            .to(txt3, .15, {y:0, ease: Sine.easeInOut})
 
-            .fromTo(txt4, .2, {y:"+=40"}, {y:-2, ease: Sine.easeInOut}, "-=.25")
-            .to(txt4, .15, {y:0, ease: Sine.easeIn})
+            .fromTo(txt4, .25, {y:"+=40"}, {y:-3, ease: Sine.easeInOut}, "-=.25")
+            .to(txt4, .15, {y:0, ease: Sine.easeInOut})
 
-            .fromTo(txt5, .2, {y:"+=40"}, {y:-2, ease: Sine.easeInOut}, "-=.25")
-            .to(txt5, .15, {y:0, ease: Sine.easeIn})
+            .fromTo(txt5, .25, {y:"+=40"}, {y:-3, ease: Sine.easeInOut}, "-=.25")
+            .to(txt5, .15, {y:0, ease: Sine.easeInOut})
 
             .fromTo(txt6, .25, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
             .to(txt6, .15, {scale:1, ease: Sine.easeIn})
 
-            .fromTo(cta, .25, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.75")
+            .fromTo(cta, .25, {opacity:0, scale: 0}, {opacity:1, scale:1.05, ease: Sine.easeInOut}, "+=.5")
             .to(cta, .15, {scale:.95, ease: Sine.easeInOut})
             .to(cta, .1, {scale:1, ease: Sine.easeIn, onComplete: function(){tl6.play();}});
 
